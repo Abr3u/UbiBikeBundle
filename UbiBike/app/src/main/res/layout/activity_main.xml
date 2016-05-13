@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.ulisboa.tecnico.cmov.ubibike.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noNetView"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/backgroundLayout">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/statsLayout"
+                android:layout_gravity="top|center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/pointsText"
+                    android:id="@+id/PointsText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/editPoints" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/CurrentTripText"
+                    android:id="@+id/CurrentTrip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/editTrip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="km"
+                    android:id="@+id/km" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:measureWithLargestChild="false"
+                android:longClickable="false">
+                <TableRow
+                    android:layout_weight="1">
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:text="@string/BookBikeButton"
+                        android:onClick="bookBikeClicked"
+                        android:id="@+id/BookBikeButton"/>
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:text="@string/HistoryButton"
+                        android:onClick="historyClicked"
+                        android:id="@+id/HistoryButton"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1">
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:text="@string/MessagesButton"
+                        android:onClick="messagesClicked"
+                        android:id="@+id/MessagesButton"/>
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:text="@string/SendPointsButton"
+                        android:onClick="sendPointsClicked"
+                        android:id="@+id/SendPointsButton"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1">
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:text="@string/trackMeButton"
+                        android:onClick="showMostRecentTrajectoryButtonClicked"
+                        android:id="@+id/trackMeButton"/>
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:text="@string/logoutButton"
+                        android:onClick="logoutClicked"
+                        android:id="@+id/logoutButton"/>
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/errorView"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
