@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.1" creator="JustGoRide.co.uk - http://www.JustGoRide.co.uk" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>my first route</name>
+    <desc />
+    <copyright author="">
+      <year>2010</year>
+    </copyright>
+    <bounds minlat="38.74924838" minlon="-9.20676827" maxlat="38.76019789" maxlon="-9.18283225" />
+  </metadata>
+  <trk>
+    <name>my first route</name>
+    <trkseg>
+      <trkpt lat="40" lon="40">
+        <ele>92.6128082275391</ele>
+      </trkpt>
+      <trkpt lat="50" lon="50">
+        <ele>92.6692428588867</ele>
+      </trkpt>
+      <trkpt lat="55" lon="55">
+        <ele>88.2439498901367</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,13 @@
+# Termite supports scripts
+newdevice A
+newdevice B
+list emus
+assignaddr e1
+binddevice A e1
+list devices
+ping
+move A (B)
+list neighbors
+commit
+move A ()
+commit
